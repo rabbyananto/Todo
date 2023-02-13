@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect, useRef } from "react";
 
 function TodoForm(props) {
+  console.log(props);
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
 
   const inputRef = useRef(null);
@@ -9,7 +10,7 @@ function TodoForm(props) {
   useEffect(() => {
     inputRef.current.focus();
   });
-
+//sdsdsdsss
   const handleChange = (e) => {
     setInput(e.target.value);
   };
